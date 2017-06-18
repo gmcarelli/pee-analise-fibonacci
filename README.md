@@ -6,6 +6,6 @@ Trabalho para a matéria de PEE do 3º semestre do curso de ADS do IFSP campus C
 
 Autores:
 
-Lyandra Saito
-Ana
+Lyandra Saito,
+Ana,
 Gil Carelli

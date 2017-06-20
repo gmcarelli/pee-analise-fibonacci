@@ -5,26 +5,38 @@
  */
 package main;
 
-import fibonacci.Fibonacci;
+import control.Control;
 
 /**
  *
  * @author Admin
  */
 public class Main {
-    
+
     public static void main(String[] args) {
-        
-        Fibonacci fibonacci;
-        
-        if (args.length != 2) {
-            
-        } else {
-            
-             
-            
+
+        try {
+
+            Control control = new Control();
+
+            boolean aux = control.forwardData(args);
+
+            if (aux) {
+
+                System.out.println("Success!");
+
+            } else {
+
+                System.out.println("Epic fail!");
+
+            }
+
+        } catch (Exception e) {
+
+            e.getMessage();
+
         }
-        
+
     }
-    
+
 }

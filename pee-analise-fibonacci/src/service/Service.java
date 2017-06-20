@@ -17,7 +17,7 @@ public class Service {
 
     public boolean performTest(String arg0, String arg1) {
 
-        boolean result = false;
+        boolean result;
 
         switch (arg0) {
             case "iterative":

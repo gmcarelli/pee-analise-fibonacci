@@ -42,19 +42,9 @@ public class Control {
 
         boolean result = false;
 
-        try {
-
-            Integer.parseInt(args[1]);
-
-        } catch (NumberFormatException e) {
-
-            throw new NumberFormatException("The second argument MUST be an Integer > 0");
-
-        }
-
         if (args.length > 0) {
 
-            result |= args.length == 2 && args[0].matches("(iterative|recursive)");
+            result |= args.length == 2 && args[0].matches("(iterative|recursive)") && Integer.parseInt(args[1]) > 0;
 
         }
 
@@ -70,36 +60,35 @@ public class Control {
 
         StringBuilder sb = new StringBuilder();
 
-        if (args.length == 1 && args[0].matches("(\\-v|\\-\\-version)")) {
+        if (args.length <= 1 || args[0].matches("(\\-v|\\-\\-version)")) {
             sb.append(System.getProperty("line.separator")).append(VERSION)
                     .append(System.getProperty("line.separator"));
-        } else {
-
-            sb.append("Performance Analysis of iterative and recursive algorithms to calculate Fibonacci's Sequel.")
-                    .append(System.getProperty("line.separator")).append(System.getProperty("line.separator"));
-
-            sb.append("DESCRIPTION").append(System.getProperty("line.separator"))
-                    .append("The algorithm is capable of calculate ")
-                    .append("Fibonacci's Sequel in both interative ")
-                    .append("and recursive ways.")
-                    .append(System.getProperty("line.separator")).append(System.getProperty("line.separator"));
-
-            sb.append("USAGE").append(System.getProperty("line.separator")).append(System.getProperty("line.separator"))
-                    .append("java -jar pee-analise-fibonacci.jar <algorithm type> <sequel size>")
-                    .append(System.getProperty("line.separator")).append("   ")
-                    .append("<algorithm type> could be \"iterative\", or \"recursive\" (String)")
-                    .append(System.getProperty("line.separator")).append("   ")
-                    .append("<sequel size> the size of the sequel to be calculated. (String)")
-                    .append(System.getProperty("line.separator")).append("   ");
-                    
-            sb.append("QUESTIONS OR BUG REPORTS").append(System.getProperty("line.separator"))
-                    .append(System.getProperty("line.separator"))
-                    .append("https://github.com/gmcarelli/pee-analise-fibonacci/issues")
-                    .append(System.getProperty("line.separator")).append(System.getProperty("line.separator"));
-
-            sb.append("VERSION").append(System.getProperty("line.separator"))
-                    .append(System.getProperty("line.separator")).append(VERSION);
         }
+
+        sb.append("Performance Analysis of iterative and recursive algorithms to calculate Fibonacci's Sequel.")
+                .append(System.getProperty("line.separator")).append(System.getProperty("line.separator"));
+
+        sb.append("DESCRIPTION").append(System.getProperty("line.separator"))
+                .append("The algorithm is capable of calculate ")
+                .append("Fibonacci's Sequel in both interative ")
+                .append("and recursive ways.")
+                .append(System.getProperty("line.separator")).append(System.getProperty("line.separator"));
+
+        sb.append("USAGE").append(System.getProperty("line.separator")).append(System.getProperty("line.separator"))
+                .append("java -jar pee-analise-fibonacci.jar <algorithm type> <sequel size>")
+                .append(System.getProperty("line.separator")).append("   ")
+                .append("<algorithm type> could be \"iterative\", or \"recursive\" (String)")
+                .append(System.getProperty("line.separator")).append("   ")
+                .append("<sequel size> the size of the sequel to be calculated. (String)")
+                .append(System.getProperty("line.separator")).append("   ");
+
+        sb.append("QUESTIONS OR BUG REPORTS").append(System.getProperty("line.separator"))
+                .append(System.getProperty("line.separator"))
+                .append("https://github.com/gmcarelli/pee-analise-fibonacci/issues")
+                .append(System.getProperty("line.separator")).append(System.getProperty("line.separator"));
+
+        sb.append("VERSION").append(System.getProperty("line.separator"))
+                .append(System.getProperty("line.separator")).append(VERSION);
 
         System.out.println(sb.toString());
 

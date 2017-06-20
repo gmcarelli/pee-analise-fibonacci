@@ -20,15 +20,11 @@ public class Main {
             Control control = new Control();
 
             boolean aux = control.forwardData(args);
-
+            
             if (aux) {
-
-                System.out.println("Success!");
-
-            } else {
-
-                System.out.println("Epic fail!");
-
+                
+                System.out.println("Test successuly completed");
+                
             }
 
         } catch (Exception e) {

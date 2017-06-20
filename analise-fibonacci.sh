@@ -47,7 +47,7 @@ for i in `seq 1 $numberOfTests`; do
    	#
    	# Running application 
    	#
-	$time -o time.txt -f %U,%S java -jar pee-analise-fibonacci.jar $type sequelSize=$2
+	$time -o time.txt -f %U,%S java -jar pee-analise-fibonacci.jar $type $sequelSize
 	#
 	#
 	#	 

@@ -75,11 +75,10 @@ public class Control {
                     .append(System.getProperty("line.separator"));
         } else {
 
-            sb.append("Performance Analysis of iterative and recursive algorithms to calculate Fibonacci's Sequel")
+            sb.append("Performance Analysis of iterative and recursive algorithms to calculate Fibonacci's Sequel.")
                     .append(System.getProperty("line.separator")).append(System.getProperty("line.separator"));
 
             sb.append("DESCRIPTION").append(System.getProperty("line.separator"))
-                    .append(System.getProperty("line.separator")).append("Performance analysis of ")
                     .append("The algorithm is capable of calculate ")
                     .append("Fibonacci's Sequel in both interative ")
                     .append("and recursive ways.")

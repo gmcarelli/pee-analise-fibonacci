@@ -24,7 +24,7 @@ cd /opt/ifsp/
 #
 # Analysing Iterative Fibonacci's alrogithm using the firsts 8 number in Fibonaccis' sequel running a batch of 30 tests.  
 #
-./analise-fibonacci.sh iterativel 8 30 
+./analise-fibonacci.sh iterative 8 30 
 		
 ```
 

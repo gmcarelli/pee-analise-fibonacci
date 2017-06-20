@@ -43,16 +43,15 @@ public class Control {
         boolean result = false;
 
         try {
-            
+
             Integer.parseInt(args[1]);
-            
+
         } catch (NumberFormatException e) {
-            
+
             throw new NumberFormatException("The second argument MUST be an Integer > 0");
-            
-            
-        } 
-        
+
+        }
+
         if (args.length > 0) {
 
             result |= args.length == 2 && args[0].matches("(iterative|recursive)");
@@ -76,38 +75,27 @@ public class Control {
                     .append(System.getProperty("line.separator"));
         } else {
 
-            sb.append("Performance Analysis of Databases for Persistence and Retrievement of Medical Images")
+            sb.append("Performance Analysis of iterative and recursive algorithms to calculate Fibonacci's Sequel")
                     .append(System.getProperty("line.separator")).append(System.getProperty("line.separator"));
 
             sb.append("DESCRIPTION").append(System.getProperty("line.separator"))
                     .append(System.getProperty("line.separator")).append("Performance analysis of ")
-                    .append("persistence and retrievement of medical images on ")
-                    .append("relational and non-relational database systems")
+                    .append("The algorithm is capable of calculate ")
+                    .append("Fibonacci's Sequel in both interative ")
+                    .append("and recursive ways.")
                     .append(System.getProperty("line.separator")).append(System.getProperty("line.separator"));
 
             sb.append("USAGE").append(System.getProperty("line.separator")).append(System.getProperty("line.separator"))
-                    .append("java -jar medical.jar <database-system> <database-name> <username> <password> <operation-params>")
+                    .append("java -jar pee-analise-fibonacci.jar <algorithm type> <sequel size>")
                     .append(System.getProperty("line.separator")).append("   ")
-                    .append("<database-system> could be \"mongo\", \"neo4j\", or \"pgsql\" (String)")
+                    .append("<algorithm type> could be \"iterative\", or \"recursive\" (String)")
                     .append(System.getProperty("line.separator")).append("   ")
-                    .append("<database-name> is the schema or collection name (String)")
-                    .append(System.getProperty("line.separator")).append("   ")
-                    .append("<username> is the username to access the database system (String)")
-                    .append(System.getProperty("line.separator")).append("   ")
-                    .append("<password> is the password to access the database system (String)")
-                    .append(System.getProperty("line.separator")).append("   ")
-                    .append("<operation-params> is defined as {-p (<image-id> <image-name> <image-path>)+ | -r (<image-id>)+}")
-                    .append(System.getProperty("line.separator")).append("   ").append("   ")
-                    .append("<image-id> is the identification code (exclusive numbers) of the image (Long)")
-                    .append(System.getProperty("line.separator")).append("   ").append("   ")
-                    .append("<image-name> is the image name to be persisted (String)")
-                    .append(System.getProperty("line.separator")).append("   ").append("   ")
-                    .append("<image-path> is the complete path to access the image to be persisted (TIFF)")
-                    .append(System.getProperty("line.separator")).append(System.getProperty("line.separator"));
-
+                    .append("<sequel size> the size of the sequel to be calculated. (String)")
+                    .append(System.getProperty("line.separator")).append("   ");
+                    
             sb.append("QUESTIONS OR BUG REPORTS").append(System.getProperty("line.separator"))
                     .append(System.getProperty("line.separator"))
-                    .append("https://github.com/gmcarelli/medical-database-analysis/issues")
+                    .append("https://github.com/gmcarelli/pee-analise-fibonacci/issues")
                     .append(System.getProperty("line.separator")).append(System.getProperty("line.separator"));
 
             sb.append("VERSION").append(System.getProperty("line.separator"))

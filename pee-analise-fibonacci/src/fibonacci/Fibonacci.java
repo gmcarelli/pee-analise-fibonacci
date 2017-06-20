@@ -42,6 +42,7 @@ public class Fibonacci {
             c = a.add(b);
             a = b;
             b = c;
+            //System.out.println(c);
         }
 
         return c;
@@ -59,6 +60,8 @@ public class Fibonacci {
         }
 
         memory[n] = recursivo(n - 1).add(recursivo(n - 2));
+        
+        //System.out.println(memory[n]);
         
         return memory[n];
         

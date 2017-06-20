@@ -15,7 +15,7 @@ public class Control {
 
     private final Service service = new Service();
 
-    public boolean forwardData(String[] args) throws Exception {
+    public boolean forwardData(String[] args) {
 
         boolean result = false;
 

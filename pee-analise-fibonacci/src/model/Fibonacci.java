@@ -33,6 +33,7 @@ public class Fibonacci {
         BigInteger b = BigInteger.ONE;
 
         if (n < 2) {
+            //System.out.println(a);
             return a;
         }
 

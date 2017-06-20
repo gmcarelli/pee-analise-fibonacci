@@ -5,7 +5,7 @@
  */
 package service;
 
-import fibonacci.Fibonacci;
+import model.Fibonacci;
 
 /**
  *

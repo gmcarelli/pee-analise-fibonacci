@@ -5,7 +5,7 @@
  */
 package tests;
 
-import fibonacci.Fibonacci;
+import model.Fibonacci;
 import java.math.BigInteger;
 import org.junit.Before;
 import org.junit.Test;

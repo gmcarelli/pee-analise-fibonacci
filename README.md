@@ -2,17 +2,17 @@
 
 Análise de performance: tempo de execução do cálculo da sequência de Fibonacci de forma iterativa e recursiva.
 
-Trabalho para a matéria de PEE do 3º semestre do curso de ADS do IFSP, campus Caraguatatuba
+Trabalho para a matéria de PEE do 3º semestre do curso de ADS do IFSP, campus Caraguatatuba.
 
 ### Installation
 
 To install on linux it is required [ant](http://ant.apache.org/), [openjdk-7-jdk](http://openjdk.java.net/), git.
 
 ```
-apt-get install ant git openjdk-7-jdk
+sudo apt-get install ant git openjdk-7-jdk
 wget https://raw.githubusercontent.com/gmcarelli/pee-analise-fibonacci/master/install.sh
-chmod +x ./install.sh
-./install.sh 
+sudo chmod +x ./install.sh
+sudo ./install.sh 
 ```
 
 ### Getting Started
